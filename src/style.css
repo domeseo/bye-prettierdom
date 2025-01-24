@@ -1,1 +1,21 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.rectangulo {
+    width: 25%;
+    max-width: 100px;
+    height: 0;
+    padding-top: 25%;
+    position: relative;
+    background: red;
+    align-items: center;
+}
+
+.border-radius {
+    border-radius: 1%;
+    border: solid black 1px;
+}
+
+.numb {
+    margin: 50%;
+    font-size: 100px;
+}
