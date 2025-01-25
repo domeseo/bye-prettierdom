@@ -8,16 +8,9 @@ import "./assets/img/4geeks.ico";
 window.onload = function () {
   //write your code here
 
-
 };
 
-// function GenerateCardNumber() {
-//   let cardNumber = (Math.floor(Math.random() * 14));
-//   let seed = (Math.floor(Math.random() * 4));
-//   return cardNumber, seed;
-// }
-
-let numberCard = (Math.floor(Math.random() * 10));
+let numberCard = (Math.floor(Math.random() * 11) + 1);
 console.log(numberCard);
 
 
@@ -29,13 +22,14 @@ function generateIcon() {
     case 1:
       return `<i class="bi bi-diamond"></i>`;
     case 2:
-      return `<i class="bi bi-heart-fill">`;
+      return `<i class="bi bi-suit-spade"></i>`;
     case 3:
-      return `<i class="bi bi-heart-fill">`;
+      return `<i class="bi bi-suit-club"></i>`;
   }
 
 }
 
+let SpadesContent = generateIcon();
 
 document.body.onload = addElement;
 
@@ -49,7 +43,7 @@ function addElement() {
     <div class="col-md-8 d-flex justify-content-center">
     <div class="bg-white mt-3 w-25 border-radius" style="height: 550px;">
     <div class="row">
-    <div class="col-md-2"><h2 class="mt-2"><div class="seed" id="palo">${generateIcon()}</h2></div></div>
+    <div class="col-md-2"><h2 class="mt-2"><div class="seed">${SpadesContent}</h2></div></div>
     <div class="col-md-8"></div>
     <div class="col-md-2"></div>
     <div class="container-fluid text-center mt-4 mb-5">
@@ -63,9 +57,10 @@ function addElement() {
     <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8"></div>
-     <div class="col-md-2"><h2 class="mt-2"><div class="seed" id="palo"><i class="bi bi-heart-fill"></i></h2></div></div>
+     <div class="col-md-2"><h2 class="mt-2"><div class="seed">${SpadesContent}</h2></div></div>
     </div>
   
     <div class="col-md-2"></div></div>`;
 
 }
+
