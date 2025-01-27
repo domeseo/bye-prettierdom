@@ -8,10 +8,19 @@ import "./assets/img/4geeks.ico";
 window.onload = function () {
   //write your code here
 
+  addElement();
+
 };
 
-let numberCard = (Math.floor(Math.random() * 11) + 1);
-console.log(numberCard);
+
+function generateAllCards() {
+  let allCards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"]
+  let cardIndex = (Math.floor(Math.random() * allCards.length));
+  return allCards[cardIndex];
+}
+
+
+let numberCard = generateAllCards();
 
 
 function generateIcon() {
@@ -31,9 +40,6 @@ function generateIcon() {
 }
 
 let icon = generateIcon();
-
-document.body.onload = addElement;
-
 
 
 function addElement() {
