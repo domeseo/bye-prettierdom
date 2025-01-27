@@ -15,7 +15,7 @@ window.onload = function () {
 // function para generar las cartas
 
 function generateAllCards() {
-  let allCards = ["A", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"]
+  let allCards = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"]
   let cardIndex = (Math.floor(Math.random() * allCards.length));
   return allCards[cardIndex];
 }
@@ -58,7 +58,7 @@ function addElement() {
     <div class="container-fluid text-center mt-4 mb-5">
     <div class="row">
     <div class="col-md-2"></div>
-    <div class="col-md-8"><h2 class="d-flex justify-content-center numb" id="cardnumbers">${numberCard}</h2></div>
+    <div class="col-md-8"><h2 class="d-flex justify-content-center numb display-1" id="cardnumbers">${numberCard}</h2></div>
     <div class="col-md-2"></div>
     </div>
     </div>
