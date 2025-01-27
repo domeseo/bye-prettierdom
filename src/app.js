@@ -26,10 +26,11 @@ function generateIcon() {
     case 3:
       return `<i class="bi bi-suit-club"></i>`;
   }
+  console.log(color);
 
 }
 
-let SpadesContent = generateIcon();
+let icon = generateIcon();
 
 document.body.onload = addElement;
 
@@ -43,7 +44,7 @@ function addElement() {
     <div class="col-md-8 d-flex justify-content-center">
     <div class="bg-white mt-3 w-25 border-radius" style="height: 550px;">
     <div class="row">
-    <div class="col-md-2"><h2 class="mt-2"><div class="seed">${SpadesContent}</h2></div></div>
+    <div class="col-md-2"><h2 class="mt-2"><div class="seed">${icon}</h2></div></div>
     <div class="col-md-8"></div>
     <div class="col-md-2"></div>
     <div class="container-fluid text-center mt-4 mb-5">
@@ -57,7 +58,7 @@ function addElement() {
     <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8"></div>
-     <div class="col-md-2"><h2 class="mt-2"><div class="seed">${SpadesContent}</h2></div></div>
+     <div class="col-md-2"><h2 class="mt-2"><div class="seed">${icon}</h2></div></div>
     </div>
   
     <div class="col-md-2"></div></div>`;
