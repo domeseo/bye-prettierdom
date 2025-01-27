@@ -15,7 +15,7 @@ window.onload = function () {
 // function para generar las cartas
 
 function generateAllCards() {
-  let allCards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"]
+  let allCards = ["A", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"]
   let cardIndex = (Math.floor(Math.random() * allCards.length));
   return allCards[cardIndex];
 }
@@ -73,3 +73,8 @@ function addElement() {
 
 }
 
+// refresh button page
+
+function refreshPage() {
+  window.location.reload();
+} 

@@ -1,14 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-/* .rectangulo {
-    width: 25%;
-    max-width: 100px;
-    height: 0;
-    padding-top: 25%;
-    position: relative;
-    background: red;
-    align-items: center;
-} */
+.bg {
+    background-color: green;
+}
 
 .border-radius {
     border-radius: 1%;
