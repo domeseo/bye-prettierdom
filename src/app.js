@@ -12,6 +12,7 @@ window.onload = function () {
 
 };
 
+// function para generar las cartas
 
 function generateAllCards() {
   let allCards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"]
@@ -22,12 +23,13 @@ function generateAllCards() {
 
 let numberCard = generateAllCards();
 
+//funcion para generar icon / seed
 
 function generateIcon() {
   let color = (Math.floor(Math.random() * 4));
   switch (color) {
     case 0:
-      return `<i class="bi bi-heart-fill">`;
+      return `<i class="bi bi-heart"></i>`;
     case 1:
       return `<i class="bi bi-diamond"></i>`;
     case 2:
@@ -35,12 +37,12 @@ function generateIcon() {
     case 3:
       return `<i class="bi bi-suit-club"></i>`;
   }
-  console.log(color);
 
 }
 
 let icon = generateIcon();
 
+// funcion para generar el html
 
 function addElement() {
 
@@ -48,9 +50,9 @@ function addElement() {
     `<div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8 d-flex justify-content-center">
-    <div class="bg-white mt-3 w-25 border-radius" style="height: 550px;">
+    <div class="bg-white mt-3 w-25 border-radius h-100">
     <div class="row">
-    <div class="col-md-2"><h2 class="mt-2"><div class="seed">${icon}</h2></div></div>
+    <div class="col-md-2"><h2 class="mt-2 ms-2"><div class="seed">${icon}</h2></div></div>
     <div class="col-md-8"></div>
     <div class="col-md-2"></div>
     <div class="container-fluid text-center mt-4 mb-5">
